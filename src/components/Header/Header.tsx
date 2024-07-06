@@ -1,12 +1,17 @@
 import Link from 'next/link'
-import { NavigationMenuDemo } from './Buttons'
+import { NavButtons } from './NavButtons'
+import { Button } from '../ui/button'
 
 export const Header = () => {
   return (
-    <nav className="w-full flex justify-between bg-transparent">
-      <div>Logo</div>
-      <NavigationMenuDemo />
-      <div>Join Us</div>
+    <nav className="bg-black w-full flex justify-between bg-transparent p-4 absolute">
+      <div className="text-white">Logo</div>
+      <NavButtons />
+      <div className="items-center bg-red-600 w-max">
+        <Button variant={'style1'} size={'mainsize'}>
+          Join Us
+        </Button>
+      </div>
     </nav>
   )
 }
