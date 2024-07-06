@@ -21,7 +21,7 @@ const buttonVariants = cva(
         style1:
           'rounded-none bg-white text-[#FD3D0C] hover:bg-[#FD3D0C] hover:text-white',
         style2:
-          'rounded-none bg-transparent text-[#FD3D0C] hover:bg-[#FD3D0C] hover:text-white',
+          'rounded-none bg-[#FD3D0C] text-white hover:bg-white hover:text-[#FD3D0C]',
       },
       size: {
         default: 'h-10 px-4 py-2',
