@@ -6,46 +6,77 @@ const carouselProps = [
     name: 'Power Yoga Classes',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
+    image: '/poweryoga.png',
   },
+
   {
     name: 'Weight Lifting Classes',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
+    image: '/weightlifting.png',
   },
   {
     name: 'Cardio & Streght Classes',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
+    image: '/cardio.png',
   },
   {
     name: 'Power Yoga Classes',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
+    image: '/poweryoga.png',
   },
+
   {
     name: 'Weight Lifting Classes',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
+    image: '/weightlifting.png',
   },
   {
     name: 'Cardio & Streght Classes',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
+    image: '/cardio.png',
   },
   {
     name: 'Power Yoga Classes',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
+    image: '/poweryoga.png',
   },
+
   {
     name: 'Weight Lifting Classes',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
+    image: '/weightlifting.png',
   },
   {
     name: 'Cardio & Streght Classes',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
+    image: '/cardio.png',
+  },
+  {
+    name: 'Power Yoga Classes',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
+    image: '/poweryoga.png',
+  },
+
+  {
+    name: 'Weight Lifting Classes',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
+    image: '/weightlifting.png',
+  },
+  {
+    name: 'Cardio & Streght Classes',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
+    image: '/cardio.png',
   },
 ]
 

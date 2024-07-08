@@ -1,6 +1,12 @@
 import * as React from 'react'
 
-import { Card, CardContent } from '@/components/ui/card'
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+} from '@/components/ui/card'
 import {
   Carousel,
   CarouselContent,
@@ -8,22 +14,42 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel'
+import Image from 'next/image'
+import { Progress } from '../ui/progress'
 
 type carouselProps = {
   name: string
   description: string
+  image: string
 }
 
 export function CarouselMain({ props }: { props: carouselProps[] }) {
   return (
-    <Carousel className="w-[900px] bottom-8">
+    <Carousel className="w-[1200px] bottom-8">
       <CarouselContent>
         {props!.map((data, index) => (
           <CarouselItem className="basis-1/3" key={index}>
             <div className="p-1">
-              <Card className="h-[460px]">
-                <CardContent className="flex aspect-square items-center justify-center p-6">
-                  <span className="text-4xl font-semibold">{data.name}</span>
+              <Card className="h-[460px] rounded-none p-0">
+                <CardContent className="flex flex-col items-center justify-end px-0">
+                  <Image
+                    alt="dude"
+                    width={1200}
+                    height={400}
+                    src={data.image}
+                    className="w-[1200px] h-[240px]"
+                  ></Image>
+                  <CardHeader className="text-4xl font-semibold">
+                    {data.name}
+                  </CardHeader>
+                  <CardDescription className="px-4">
+                    {data.description} <br />
+                    <label className="flex justify-between">
+                      <b>Class Full</b>
+                      <b>60%</b>
+                    </label>
+                    <Progress className="bg-red-400" value={63} />
+                  </CardDescription>
                 </CardContent>
               </Card>
             </div>
