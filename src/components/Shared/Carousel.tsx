@@ -21,6 +21,7 @@ type carouselProps = {
   name: string
   description: string
   image: string
+  full: number
 }
 
 export function CarouselMain({ props }: { props: carouselProps[] }) {
@@ -31,7 +32,7 @@ export function CarouselMain({ props }: { props: carouselProps[] }) {
           <CarouselItem className="basis-1/3" key={index}>
             <div className="p-1">
               <Card className="h-[460px] rounded-none p-0">
-                <CardContent className="flex flex-col items-center justify-end px-0">
+                <CardContent className="flex flex-col items-center justify-center px-0">
                   <Image
                     alt="dude"
                     width={1200}
@@ -46,10 +47,10 @@ export function CarouselMain({ props }: { props: carouselProps[] }) {
                     {data.description} <br />
                     <label className="flex justify-between">
                       <b>Class Full</b>
-                      <b>60%</b>
+                      <b>{data.full}%</b>
                     </label>
-                    <Progress className="bg-red-400" value={63} />
                   </CardDescription>
+                  <Progress className="bg-[#FD3D0C]" value={data.full} />
                 </CardContent>
               </Card>
             </div>
