@@ -4,7 +4,7 @@ import { Button } from '../ui/button'
 
 export const Header = () => {
   return (
-    <nav className="bg-black w-full flex justify-between bg-transparent p-4 absolute">
+    <nav className=" w-full flex justify-between bg-transparent p-4 absolute">
       <div className="text-white">Logo</div>
       <NavButtons />
       <div className="items-center bg-red-600 w-max">
