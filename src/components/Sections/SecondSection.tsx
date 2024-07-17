@@ -5,8 +5,8 @@ import { Titles } from '../Shared/Titles'
 
 export const SecondSection = () => {
   return (
-    <section className="h-screen w-[80%] md:h-[80vh] md:w-full flex items-center justify-center">
-      <div className="hidden md:w-1/3">
+    <section className="h-screen w-full flex items-center justify-center relative">
+      <div className="hidden md:flex w-[800px] absolute">
         <Image
           alt="image"
           layout="fill"
@@ -14,7 +14,7 @@ export const SecondSection = () => {
           className="rounded-bl-2xl [box-shadow:72px_-74px_0px_-58px_rgba(253,61,12,0.91)] "
         ></Image>
       </div>
-      <div className="md:w-1/3 ">
+      <div className="w-[80%]">
         <Titles sub={'About Us'} main={'Welcome To Our Fitness Gym'} />
         <p className="my-6 text-xl md:py-6 md:text-xl">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
