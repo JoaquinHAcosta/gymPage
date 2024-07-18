@@ -9,7 +9,7 @@ export const Titles = ({ sub, main }: Titulos) => {
       <label className="flex text-[rgb(253,61,12)] uppercase font-bold text-xl">
         {sub}
       </label>
-      <h1 className="text-5xl text-center font-bold md:text-8xl">{main}</h1>
+      <h1 className="text-5xl text-center font-bold md:text-7xl">{main}</h1>
     </div>
   )
 }

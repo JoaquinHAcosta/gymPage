@@ -4,8 +4,8 @@ import Image from 'next/image'
 
 const FirstSection = () => {
   return (
-    <section className="bg-[rgb(3,12,20)] bg-[linear-gradient(62deg,_rgba(3,12,20,1)_72%,_rgba(253,61,12,1)_72%)] h-screen w-full">
-      <div className="relative h-screen flex items-center justify-center bottom-0">
+    <section className="bg-[rgb(3,12,20)] bg-[linear-gradient(62deg,_rgba(3,12,20,1)_72%,_rgba(253,61,12,1)_72%)] h-screen w-full ">
+      <div className="relative h-screen flex items-center justify-center bottom-0 max-w-[1350px] mx-auto">
         <div className=" text-white absolute z-10 w-[80%] xl:w-[800px]">
           <label className=" flex bold uppercase">
             <span className="bg-[rgb(253,61,12)] p-2">The Best</span>
