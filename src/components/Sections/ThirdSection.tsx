@@ -1,110 +1,18 @@
 import React from 'react'
-import { CarouselMain } from '../Shared/Carousel'
-
-const carouselProps = [
-  {
-    name: 'Power Yoga Classes',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
-    image: '/poweryoga.png',
-    full: 55,
-  },
-
-  {
-    name: 'Weight Lifting Classes',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
-    image: '/weightlifting.png',
-    full: 70,
-  },
-  {
-    name: 'Cardio & Streght Classes',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
-    image: '/cardio.png',
-    full: 98,
-  },
-  {
-    name: 'Power Yoga Classes',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
-    image: '/poweryoga.png',
-    full: 55,
-  },
-
-  {
-    name: 'Weight Lifting Classes',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
-    image: '/weightlifting.png',
-    full: 70,
-  },
-  {
-    name: 'Cardio & Streght Classes',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
-    image: '/cardio.png',
-    full: 98,
-  },
-  {
-    name: 'Power Yoga Classes',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
-    image: '/poweryoga.png',
-    full: 55,
-  },
-
-  {
-    name: 'Weight Lifting Classes',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
-    image: '/weightlifting.png',
-    full: 70,
-  },
-  {
-    name: 'Cardio & Streght Classes',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
-    image: '/cardio.png',
-    full: 98,
-  },
-  {
-    name: 'Power Yoga Classes',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
-    image: '/poweryoga.png',
-    full: 55,
-  },
-
-  {
-    name: 'Weight Lifting Classes',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
-    image: '/weightlifting.png',
-    full: 70,
-  },
-  {
-    name: 'Cardio & Streght Classes',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
-    image: '/cardio.png',
-    full: 98,
-  },
-]
+import { CarouselClasses } from '../Shared/CarouselClasses'
+import { carouselProps } from '@/data/gymData'
 
 export const ThirdSection = () => {
   return (
     <section className="h-[120vh] w-full bg-[rgb(3,12,20)] bg-[linear-gradient(0deg,_rgba(3,12,20,1)_88%,_rgba(255,255,255,1)_88%)]">
-      <div className="h-[500px] w-[860px] mx-auto border-8 border-red-600 text-white">
+      <div className="md:h-[500px] w-[80%] mx-auto border-8 border-red-600 text-white">
         Aca video
       </div>
       <div className="text-white w-full flex flex-col items-center">
-        <h2 className=" p-4 pb-10 text-4xl font-bold">
+        <h2 className="pt-24 px-4 pb-12 text-5xl font-bold text-center">
           Fitness Classes For Every Goal
         </h2>
-        <div>
-          <CarouselMain props={carouselProps}></CarouselMain>
-        </div>
+        <CarouselClasses props={carouselProps}></CarouselClasses>
       </div>
     </section>
   )
