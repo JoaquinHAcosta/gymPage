@@ -3,7 +3,7 @@ import { ClassesInfo } from './ClassesInfo'
 
 export const PickClasses = () => {
   return (
-    <Tabs defaultValue="lunes" className="lg:w-[940px] min-h-[400px]">
+    <Tabs defaultValue="lunes" className="lg:w-[940px] min-h-[300px]">
       <TabsList className="grid w-full grid-cols-7 bg-transparent text-white">
         <TabsTrigger value="lunes">Lunes</TabsTrigger>
         <TabsTrigger value="martes">Martes</TabsTrigger>
