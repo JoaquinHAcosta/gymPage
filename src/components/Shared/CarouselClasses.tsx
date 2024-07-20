@@ -26,10 +26,13 @@ type carouselProps = {
 
 export function CarouselClasses({ props }: { props: carouselProps[] }) {
   return (
-    <Carousel className="w-80 lg:w-[1200px] md:bottom-8">
+    <Carousel className="w-80 md:w-[680px] lg:w-[820px] xl:w-[1100px] mx-auto">
       <CarouselContent>
         {props!.map((data, index) => (
-          <CarouselItem className="basis-1/1 md:basis-1/3" key={index}>
+          <CarouselItem
+            className="basis-1/1 md:basis-1/2 xl:basis-1/3"
+            key={index}
+          >
             <div className="p-1">
               <ClassesCard data={data} />
             </div>
@@ -44,29 +47,25 @@ export function CarouselClasses({ props }: { props: carouselProps[] }) {
 
 const ClassesCard = ({ data }: { data: any }) => {
   return (
-    <Card className="h-[560px] w-[310px] ">
-      <CardContent className="flex-col items-center justify-center px-0 overflow-hidden">
-        <div className="absolute h-1/2 w-full py-2 ">
-          <Image
-            alt="dude"
-            // width={400}
-            // height={200}
-            src={data.image}
-            fill
-            // className="w-[400px] h-[240px]"
-          ></Image>
+    <Card className="h-[480px] w-[300px] lg:mx-10">
+      <CardContent className="flex flex-col justify-between px-0  h-full">
+        <div className="h-[280px] w-[298px] py-2 relative rounded-t-md overflow-hidden">
+          <Image alt="dude" src={data.image} fill></Image>
         </div>
-        <CardHeader className="pt-[50%] w-[90%] mx-auto text-3xl font-semibold">
+        <CardHeader className="w-[90%] mx-auto text-2xl font-semibold py-3">
           {data.name}
         </CardHeader>
-        <CardDescription className="px-4 w-[90%]  mx-auto">
+        <CardDescription className="px-4 mx-auto">
           {data.description} <br />
-          <label className="flex justify-between">
+          <label className="flex justify-between font-semibold">
             <b>Class Full</b>
             <b>{data.full}%</b>
           </label>
         </CardDescription>
-        <Progress className="bg-[#FD3D0C] w-[90%] mx-auto" value={data.full} />
+        <Progress
+          className="bg-[#FD3D0C] w-[90%] mx-auto bottom-0"
+          value={data.full}
+        />
       </CardContent>
     </Card>
   )
