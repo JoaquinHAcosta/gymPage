@@ -16,8 +16,8 @@ export default function Home() {
       <ThirdSection />
       <FourthSection />
       <StatsSection />
-      {/*<FifthSection />
-      <PricingSection />
+      <FifthSection />
+      {/*<PricingSection />
       <Footer /> */}
     </main>
   )

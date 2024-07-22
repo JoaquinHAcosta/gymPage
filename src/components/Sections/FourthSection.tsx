@@ -4,7 +4,7 @@ import { Titles } from '../Shared/Titles'
 
 export const FourthSection = () => {
   return (
-    <section className="hidden md:block relative w-full h-screen">
+    <section className="relative w-full h-screen">
       <div className="bg-[url('/gympeople.png')] h-screen w-full bg-no-repeat bg-center bg-cover blur-sm absolute"></div>
       <div className="h-screen w-full blur-none flex flex-col items-center justify-center text-white">
         <Titles sub="TIME & TABLE" main="Weekly Class Schedule" />

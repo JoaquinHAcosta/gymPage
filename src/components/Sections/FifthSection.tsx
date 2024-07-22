@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { Button } from '../ui/button'
+import { Titles } from '../Shared/Titles'
 
 const trainers = [
   {
@@ -27,12 +28,9 @@ const trainers = [
 
 export const FifthSection = () => {
   return (
-    <section className="bg-[#030c14] h-[60vh] w-full text-white flex flex-col items-center">
-      <p className="font-bold text-[#fd3d0c]">Best Trainers</p>
-      <h1 className="mx-auto text-4xl font-bold my-3">
-        Our Professional Trainers
-      </h1>
-      <div className="w-[80%] mx-auto flex justify-around">
+    <section className="bg-[#030c14] h-screen md:h-[60vh] w-full text-white flex flex-col items-center">
+      <Titles sub="Best Trainers" main="Our Professional Trainers" />
+      <div className="w-full mx-auto grid grid-cols-2">
         {trainers.map((t, i) => (
           <TrainerCard trainer={t} key={i} />
         ))}
@@ -49,14 +47,10 @@ type Trainer = {
 
 const TrainerCard = ({ trainer }: { trainer: Trainer }) => {
   return (
-    <div className="h-96 w-48 flex flex-col items-center justify-center text-white">
-      <Image
-        className="rounded-full"
-        src="/guy2.png"
-        alt="guy"
-        width={240}
-        height={200}
-      ></Image>
+    <div className="h-96 w-fit md:w-48 flex flex-col items-center justify-center text-white">
+      <div className="h-[150px] w-[150px] relative">
+        <Image className="rounded-full" src="/guy2.png" alt="guy" fill></Image>
+      </div>
       <h1 className="text-white text-2xl">{trainer.name}</h1>
       <p>Fitness Trainer</p>
       <div className="flex">
