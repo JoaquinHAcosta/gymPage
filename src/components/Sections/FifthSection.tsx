@@ -28,9 +28,9 @@ const trainers = [
 
 export const FifthSection = () => {
   return (
-    <section className="bg-[#030c14] h-screen md:h-[60vh] w-full text-white flex flex-col items-center">
-      <Titles sub="Best Trainers" main="Our Professional Trainers" />
-      <div className="w-full mx-auto grid grid-cols-2">
+    <section className="bg-[#030c14] h-fit w-full text-white flex flex-col items-center pt-4">
+      <Titles sub="The Best Trainers" main="Our Professional Trainers" />
+      <div className="w-full mx-auto flex flex-wrap justify-center my-5">
         {trainers.map((t, i) => (
           <TrainerCard trainer={t} key={i} />
         ))}
@@ -47,7 +47,7 @@ type Trainer = {
 
 const TrainerCard = ({ trainer }: { trainer: Trainer }) => {
   return (
-    <div className="h-96 w-fit md:w-48 flex flex-col items-center justify-center text-white">
+    <div className="h-fit md:h-96 w-[320px] flex flex-col items-center justify-center text-white">
       <div className="h-[150px] w-[150px] relative">
         <Image className="rounded-full" src="/guy2.png" alt="guy" fill></Image>
       </div>
