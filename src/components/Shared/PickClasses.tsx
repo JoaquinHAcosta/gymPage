@@ -3,7 +3,7 @@ import { ClassesInfo } from './ClassesInfo'
 
 export const PickClasses = () => {
   return (
-    <Tabs defaultValue="lunes" className="w-[1100px] min-h-[500px]">
+    <Tabs defaultValue="lunes" className="lg:w-[940px] min-h-[300px]">
       <TabsList className="grid w-full grid-cols-7 bg-transparent text-white">
         <TabsTrigger value="lunes">Lunes</TabsTrigger>
         <TabsTrigger value="martes">Martes</TabsTrigger>
@@ -28,3 +28,48 @@ export const PickClasses = () => {
     </Tabs>
   )
 }
+
+const HorarioClases = [
+  {
+    lunes: [
+      { name: 'Yoga', horario: '16:30', description: 'Lorem ipsum' },
+      { name: 'Musculatura', horario: '18:30', description: 'Lorem ipsum' },
+    ],
+  },
+  {
+    martes: [
+      { name: 'Yoga', horario: '16:30', description: 'Lorem ipsum' },
+      { name: 'Musculatura', horario: '18:30', description: 'Lorem ipsum' },
+    ],
+  },
+  {
+    miercoles: [
+      { name: 'Yoga', horario: '16:30', description: 'Lorem ipsum' },
+      { name: 'Musculatura', horario: '18:30', description: 'Lorem ipsum' },
+    ],
+  },
+  {
+    jueves: [
+      { name: 'Yoga', horario: '16:30', description: 'Lorem ipsum' },
+      { name: 'Musculatura', horario: '18:30', description: 'Lorem ipsum' },
+    ],
+  },
+  {
+    viernes: [
+      { name: 'Yoga', horario: '16:30', description: 'Lorem ipsum' },
+      { name: 'Musculatura', horario: '18:30', description: 'Lorem ipsum' },
+    ],
+  },
+  {
+    sabado: [
+      { name: 'Yoga', horario: '16:30', description: 'Lorem ipsum' },
+      { name: 'Musculatura', horario: '18:30', description: 'Lorem ipsum' },
+    ],
+  },
+  {
+    domingo: [
+      { name: 'Yoga', horario: '16:30', description: 'Lorem ipsum' },
+      { name: 'Musculatura', horario: '18:30', description: 'Lorem ipsum' },
+    ],
+  },
+]

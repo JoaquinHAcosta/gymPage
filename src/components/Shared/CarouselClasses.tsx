@@ -39,8 +39,8 @@ export function CarouselClasses({ props }: { props: carouselProps[] }) {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      <CarouselPrevious className="hidden sm:block" />
+      <CarouselNext className="hidden sm:block" />
     </Carousel>
   )
 }

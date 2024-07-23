@@ -14,10 +14,10 @@ export default function Home() {
       <FirstSection />
       <SecondSection />
       <ThirdSection />
-      {/*<FourthSection />
+      <FourthSection />
       <StatsSection />
       <FifthSection />
-      <PricingSection />
+      {/*<PricingSection />
       <Footer /> */}
     </main>
   )

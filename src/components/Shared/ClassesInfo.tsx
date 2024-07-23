@@ -9,7 +9,7 @@ export const ClassesInfo = () => {
   return (
     <Accordion type="single" collapsible>
       <AccordionItem value="item-1">
-        <AccordionTrigger>Clases de Yoga</AccordionTrigger>
+        <AccordionTrigger className="h-20">Clases de Yoga</AccordionTrigger>
         <AccordionContent>
           Yes. It adheres to the WAI-ARIA design pattern.
         </AccordionContent>
