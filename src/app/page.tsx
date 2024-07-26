@@ -17,8 +17,8 @@ export default function Home() {
       <FourthSection />
       <StatsSection />
       <FifthSection />
-      {/*<PricingSection />
-      <Footer /> */}
+      <PricingSection />
+      <Footer />
     </main>
   )
 }

@@ -1,4 +1,3 @@
-import React from 'react'
 import { CarouselClasses } from '../Shared/CarouselClasses'
 import { carouselProps } from '@/data/gymData'
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button } from '../ui/button'
+import { Titles } from '../Shared/Titles'
 
 const prices = [
   {
@@ -40,12 +41,9 @@ const prices = [
 
 export const PricingSection = () => {
   return (
-    <section className="h-[95vh] w-full flex flex-col items-center justify-center">
-      <p className="font-bold text-3xl text-[#fd3d0c]">Pricing Table</p>
-      <h1 className="mx-auto text-6xl font-bold mt-3 mb-14">
-        Choose Your Pricing Plan
-      </h1>
-      <div className="flex justify-stretch items-stretch">
+    <section className="h-fit xl:h-[95vh] w-full flex flex-col items-center justify-center">
+      <Titles main="Choose Your Pricing Plan" sub="Pricing Table"></Titles>
+      <div className="flex justify-center items-stretch flex-wrap gap-3 my-7">
         {prices.map((p, i) => (
           <PriceCard pricing={p} key={i} />
         ))}
@@ -62,7 +60,7 @@ type Props = {
 
 const PriceCard = ({ pricing }: { pricing: Props }) => {
   return (
-    <div className="w-80 flex flex-col items-center justify-center border-2 p-6 rounded-lg mx-8">
+    <div className="w-80 flex flex-col items-center justify-center border-2 p-6 rounded-lg mx-8 shadow-md transition hover:scale-105 lg:py-10">
       <h1 className="pb-5 text-5xl font-semibold">{pricing.name}</h1>
       <p className="text-wrap">
         Lorem ipsum dolor sit amet Lorem ipsum dolor sit, adipisicing elit.

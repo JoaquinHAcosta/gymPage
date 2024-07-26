@@ -28,7 +28,7 @@ const trainers = [
 
 export const FifthSection = () => {
   return (
-    <section className="bg-[#030c14] h-fit w-full text-white flex flex-col items-center pt-4">
+    <section className="bg-[#131313] h-fit w-full text-white flex flex-col items-center pt-4">
       <Titles sub="The Best Trainers" main="Our Professional Trainers" />
       <div className="w-full mx-auto flex flex-wrap justify-center my-5">
         {trainers.map((t, i) => (
