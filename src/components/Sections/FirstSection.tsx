@@ -1,6 +1,9 @@
 import React from 'react'
 import { Button } from '../ui/button'
 import Image from 'next/image'
+import GimGuyImage from '../../../public/gymguy3.png'
+
+const isProd = process.env.NODE_ENV === 'production'
 
 const FirstSection = () => {
   return (
@@ -24,7 +27,14 @@ const FirstSection = () => {
           </Button>
         </div>
         <div className="w-[350px] h-[450px] md:w-[520px] md:h-[650px] absolute bottom-0 right-0">
-          <Image layout="fill" alt="image" src={'/gymguy3.png'}></Image>
+          <Image
+            layout="fill"
+            alt="image"
+            // objectFit="contain"
+            src={GimGuyImage}
+            // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            // sizes=''
+          ></Image>
         </div>
       </div>
     </section>
