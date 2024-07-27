@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import { Button } from '../ui/button'
 import { Titles } from '../Shared/Titles'
+import GymGuy2 from '../../../public/guy2.png'
 
 export const SecondSection = () => {
   return (
@@ -30,7 +31,7 @@ export const SecondSection = () => {
               <Image
                 alt="image"
                 layout="fill"
-                src={'/guy2.png'}
+                src={GymGuy2}
                 className="rounded-full"
               ></Image>
             </div>

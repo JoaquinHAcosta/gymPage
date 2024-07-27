@@ -5,6 +5,7 @@ import { Discord } from '../Shared/Icons/Discord'
 import { Facebook } from '../Shared/Icons/Facebook'
 import { Github } from '../Shared/Icons/Github'
 import { Dribbble } from '../Shared/Icons/Dribbble'
+import Mapache from '../../../public/mapache.png'
 
 export const Footer = () => {
   return (
@@ -16,7 +17,7 @@ export const Footer = () => {
               href="https://joaquinhacosta.github.io/joaquindev/"
               className="flex items-center"
             >
-              <Image src="/mapache.png" height={32} width={32} alt="Raccoon" />
+              <Image src={Mapache} height={32} width={32} alt="Raccoon" />
               <span className="ml-2 self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
                 {' '}
                 Zoma Dev

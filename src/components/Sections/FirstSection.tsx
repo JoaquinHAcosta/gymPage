@@ -27,19 +27,11 @@ const FirstSection = () => {
           </Button>
         </div>
         <div className="w-[350px] h-[450px] md:w-[520px] md:h-[650px] absolute bottom-0 right-0">
-          <Image
-            layout="fill"
-            alt="image"
-            // objectFit="contain"
-            src={GimGuyImage}
-            // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            // sizes=''
-          ></Image>
+          <Image layout="fill" alt="image" src={GimGuyImage}></Image>
         </div>
       </div>
     </section>
   )
 }
 
-// background: linear-gradient(48deg, rgba(253,61,12,1) 81%, rgba(3,12,20,1) 82%);
 export default FirstSection
