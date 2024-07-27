@@ -5,8 +5,6 @@ import { Discord } from '../Shared/Icons/Discord'
 import { Facebook } from '../Shared/Icons/Facebook'
 import { Github } from '../Shared/Icons/Github'
 import { Dribbble } from '../Shared/Icons/Dribbble'
-import { ZomaDev } from '../Shared/Icons/ZomaDev'
-import { ZomaDev2 } from '../Shared/Icons/ZomaDev2'
 
 export const Footer = () => {
   return (
