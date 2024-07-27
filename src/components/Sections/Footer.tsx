@@ -5,8 +5,6 @@ import { Discord } from '../Shared/Icons/Discord'
 import { Facebook } from '../Shared/Icons/Facebook'
 import { Github } from '../Shared/Icons/Github'
 import { Dribbble } from '../Shared/Icons/Dribbble'
-import { ZomaDev } from '../Shared/Icons/ZomaDev'
-import { ZomaDev2 } from '../Shared/Icons/ZomaDev2'
 
 export const Footer = () => {
   return (
@@ -18,12 +16,7 @@ export const Footer = () => {
               href="https://joaquinhacosta.github.io/joaquindev/"
               className="flex items-center"
             >
-              <Image
-                src="/mapache.png"
-                height={32}
-                width={32}
-                alt="FlowBite Logo"
-              />
+              <Image src="/mapache.png" height={32} width={32} alt="Raccoon" />
               <span className="ml-2 self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
                 {' '}
                 Zoma Dev
