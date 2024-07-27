@@ -6,23 +6,27 @@ import { Facebook } from '../Shared/Icons/Facebook'
 import { Github } from '../Shared/Icons/Github'
 import { Dribbble } from '../Shared/Icons/Dribbble'
 import { ZomaDev } from '../Shared/Icons/ZomaDev'
+import { ZomaDev2 } from '../Shared/Icons/ZomaDev2'
 
 export const Footer = () => {
   return (
     <footer className="bg-white dark:bg-gray-900 w-full">
       <div className="mx-auto p-4 py-6 lg:py-8">
-        <div className="flex flex-wrap justify-center items-center md:justify-around max-w-6xl">
+        <div className="mx-auto flex flex-wrap justify-center items-center md:justify-around max-w-6xl">
           <div className="mb-6 md:mb-0">
-            <a href="#" className="flex items-center">
+            <a
+              href="https://joaquinhacosta.github.io/joaquindev/"
+              className="flex items-center"
+            >
               <Image
-                src="https://flowbite.com/docs/images/logo.svg"
+                src="/mapache.png"
                 height={32}
                 width={32}
                 alt="FlowBite Logo"
               />
-              {/* <ZomaDev /> */}
-              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-                Flowbite
+              <span className="ml-2 self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+                {' '}
+                Zoma Dev
               </span>
             </a>
           </div>
@@ -33,8 +37,8 @@ export const Footer = () => {
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                  <a href="https://flowbite.com/" className="hover:underline">
-                    Flowbite
+                  <a href="https://nextjs.org" className="hover:underline">
+                    NextJs
                   </a>
                 </li>
                 <li>
@@ -49,22 +53,19 @@ export const Footer = () => {
             </div>
             <div>
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-                Follow us
+                Contact Me
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
                   <a
-                    href="https://github.com/themesberg/flowbite"
+                    href="https://github.com/JoaquinHAcosta"
                     className="hover:underline "
                   >
                     Github
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="https://discord.gg/4eeurUVvTy"
-                    className="hover:underline"
-                  >
+                  <a href="#" className="hover:underline">
                     Discord
                   </a>
                 </li>
@@ -92,9 +93,12 @@ export const Footer = () => {
         <hr className="my-6 border-gray-200 mx-auto dark:border-gray-700 lg:my-8" />
         <div className="flex items-center justify-between">
           <span className="text-sm text-gray-500 text-center dark:text-gray-400">
-            © 2023{' '}
-            <a href="https://flowbite.com/" className="hover:underline">
-              Flowbite™
+            © 2024{' '}
+            <a
+              href="https://joaquinhacosta.github.io/joaquindev/"
+              className="hover:underline"
+            >
+              Zoma Dev
             </a>
             . All Rights Reserved.
           </span>
