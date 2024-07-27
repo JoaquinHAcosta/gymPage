@@ -47,7 +47,7 @@ export function CarouselClasses({ props }: { props: carouselProps[] }) {
 
 const ClassesCard = ({ data }: { data: any }) => {
   return (
-    <Card className="h-[480px] w-[300px] lg:mx-10">
+    <Card className="h-[480px] w-[300px] lg:mx-10 shadow-md transition hover:scale-105">
       <CardContent className="flex flex-col justify-between px-0  h-full">
         <div className="h-[280px] w-[298px] py-2 relative rounded-t-md overflow-hidden">
           <Image alt="dude" src={data.image} fill></Image>
