@@ -1,4 +1,3 @@
-import React from 'react'
 import { PickClasses } from '../Shared/PickClasses'
 import { Titles } from '../Shared/Titles'
 import GymPeople from '../../../public/gympeople.png'
