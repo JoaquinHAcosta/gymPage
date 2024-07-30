@@ -3,7 +3,7 @@
 URGENTE 
 
 [] Arreglar los links de la Navbar
-[] z-index de Navbar
+[x] z-index de Navbar
 
 
 
@@ -15,3 +15,28 @@ base de datos con clases/trainers
 [] conectar firebase al proyecto
 [] crear dashboard admin
 [] agregar metodo de pago para subscripcion
+
+go to
+QUE PONER EN HEADER
+
+1- INICIO
+
+2 - COACH PHRASES/WELCOMES
+[][][]
+coach
+pic
+phrase
+
+3 - CLASSES
+lista de clases
+2 cols 3 files
+
+4 - SCHEDULE
+go to schedule
+
+5 - COACHS
+go to coachs
+
+6 - PRICING
+list and go to see more
+
