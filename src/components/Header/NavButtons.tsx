@@ -55,7 +55,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function NavButtons() {
   return (
-    <NavigationMenu className="hidden md:flex">
+    <NavigationMenu className="hidden md:flex z-20">
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger className="bg-transparent text-white">
