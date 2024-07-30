@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import React from 'react'
 import { Button } from '../ui/button'
 import { Titles } from '../Shared/Titles'
 import GymGuy2 from '../../../public/guy2.png'
