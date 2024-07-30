@@ -1,0 +1,17 @@
+
+
+URGENTE 
+
+[] Arreglar los links de la Navbar
+[] z-index de Navbar
+
+
+
+base de datos con clases/trainers
+
+2.0
+
+[] fake dashboard para que puedan agregar clase/trainer en localhost
+[] conectar firebase al proyecto
+[] crear dashboard admin
+[] agregar metodo de pago para subscripcion
