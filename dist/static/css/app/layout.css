@@ -676,6 +676,9 @@ video {
   .z-0 {
   z-index: 0;
 }
+  .z-20 {
+  z-index: 20;
+}
   .row-span-3 {
   grid-row: span 3 / span 3;
 }
@@ -1152,6 +1155,10 @@ video {
   .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+  .bg-stone-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(120 113 108 / var(--tw-bg-opacity));
 }
   .bg-\[linear-gradient\(62deg\2c _rgba\(3\2c 12\2c 20\2c 1\)_72\%\2c _rgba\(253\2c 61\2c 12\2c 1\)_72\%\)\] {
   background-image: linear-gradient(62deg, rgba(3,12,20,1) 72%, rgba(253,61,12,1) 72%);
