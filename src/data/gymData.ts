@@ -1,93 +1,4 @@
-export const carouselProps = [
-  {
-    name: 'Power Yoga Classes',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
-    image: '/poweryoga.png',
-    full: 55,
-  },
-
-  {
-    name: 'Weight Lifting Classes',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
-    image: '/weightlifting.png',
-    full: 70,
-  },
-  {
-    name: 'Cardio & Streght Classes',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
-    image: '/cardio.png',
-    full: 98,
-  },
-  {
-    name: 'Power Yoga Classes',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
-    image: '/poweryoga.png',
-    full: 55,
-  },
-
-  {
-    name: 'Weight Lifting Classes',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
-    image: '/weightlifting.png',
-    full: 70,
-  },
-  {
-    name: 'Cardio & Streght Classes',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
-    image: '/cardio.png',
-    full: 98,
-  },
-  {
-    name: 'Power Yoga Classes',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
-    image: '/poweryoga.png',
-    full: 55,
-  },
-
-  {
-    name: 'Weight Lifting Classes',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
-    image: '/weightlifting.png',
-    full: 70,
-  },
-  {
-    name: 'Cardio & Streght Classes',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
-    image: '/cardio.png',
-    full: 98,
-  },
-  {
-    name: 'Power Yoga Classes',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
-    image: '/poweryoga.png',
-    full: 55,
-  },
-
-  {
-    name: 'Weight Lifting Classes',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
-    image: '/weightlifting.png',
-    full: 70,
-  },
-  {
-    name: 'Cardio & Streght Classes',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
-    image: '/cardio.png',
-    full: 98,
-  },
-]
+import exmpleImage from '../img/exmpleImage.png'
 
 export const couches = [
   {
@@ -172,6 +83,7 @@ export const classes = [
     ],
     difficultyLevel: 'Intermedio',
     capacity: 55,
+    image: exmpleImage,
   },
   {
     _id: 2,
@@ -186,8 +98,8 @@ export const classes = [
     ],
     difficultyLevel: 'Avanzado',
     capacity: 55,
+    image: exmpleImage,
   },
-
   {
     _id: 3,
     classTitle: 'Pilates y Yoga',
@@ -201,6 +113,7 @@ export const classes = [
     ],
     difficultyLevel: 'Todos los niveles',
     capacity: 55,
+    image: exmpleImage,
   },
   {
     _id: 4,
@@ -215,6 +128,7 @@ export const classes = [
     ],
     difficultyLevel: 'Intermedio',
     capacity: 55,
+    image: exmpleImage,
   },
   {
     _id: 5,
@@ -229,6 +143,7 @@ export const classes = [
     ],
     difficultyLevel: 'Avanzado',
     capacity: 55,
+    image: exmpleImage,
   },
   {
     _id: 6,
@@ -243,5 +158,6 @@ export const classes = [
     ],
     difficultyLevel: 'Intermedio',
     capacity: 55,
+    image: exmpleImage,
   },
 ]

@@ -22,7 +22,7 @@ type carouselProps = {
   schedule: any
   difficultyLevel: string
   capacity: number
-  image: string
+  image: any
 }
 
 export function CarouselClasses({ props }: { props: carouselProps[] }) {
