@@ -11,7 +11,7 @@ export const SecondSection = () => {
           <Image
             alt="image"
             layout="fill"
-            src={'/guy2.png'}
+            src={GymGuy2}
             className="rounded-bl-2xl [box-shadow:72px_-74px_0px_-58px_rgba(253,61,12,0.91)] "
           ></Image>
         </div>
