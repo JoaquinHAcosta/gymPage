@@ -840,6 +840,18 @@ video {
   .h-screen {
   height: 100vh;
 }
+  .max-h-64 {
+  max-height: 16rem;
+}
+  .max-h-36 {
+  max-height: 9rem;
+}
+  .max-h-32 {
+  max-height: 8rem;
+}
+  .max-h-3 {
+  max-height: 0.75rem;
+}
   .min-h-\[300px\] {
   min-height: 300px;
 }
@@ -1020,6 +1032,17 @@ video {
 }
   .overflow-hidden {
   overflow: hidden;
+}
+  .truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+  .text-ellipsis {
+  text-overflow: ellipsis;
+}
+  .text-clip {
+  text-overflow: clip;
 }
   .whitespace-nowrap {
   white-space: nowrap;
@@ -1266,6 +1289,10 @@ video {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
+  .text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
   .font-bold {
   font-weight: 700;
 }
@@ -1334,6 +1361,9 @@ video {
   .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+  .underline {
+  text-decoration-line: underline;
 }
   .no-underline {
   text-decoration-line: none;
@@ -1820,11 +1850,6 @@ video {
     background-image: linear-gradient(0deg, rgba(3,12,20,1) 88%, rgba(255,255,255,1) 88%);
   }
 
-  .md\:py-6 {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-  }
-
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1866,6 +1891,10 @@ video {
     height: 32vh;
   }
 
+  .lg\:h-\[600px\] {
+    height: 600px;
+  }
+
   .lg\:h-\[600\] {
     height: 600;
   }
@@ -1876,6 +1905,10 @@ video {
 
   .lg\:w-\[400px\] {
     width: 400px;
+  }
+
+  .lg\:w-\[480px\] {
+    width: 480px;
   }
 
   .lg\:w-\[500px\] {
@@ -1912,6 +1945,11 @@ video {
     padding-bottom: 2.5rem;
   }
 
+  .lg\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
   .lg\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -1927,12 +1965,26 @@ video {
     line-height: 1;
   }
 
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
   .lg\:\*\:first\:p-14:first-child > * {
     padding: 3.5rem;
   }
 }
 
   @media (min-width: 1280px) {
+
+  .xl\:block {
+    display: block;
+  }
 
   .xl\:h-\[640px\] {
     height: 640px;

@@ -2,11 +2,13 @@ import Image from 'next/image'
 import { Button } from '../ui/button'
 import { Titles } from '../Shared/Titles'
 import GymGuy2 from '../../../public/guy2.png'
+import { classes } from '@/data/gymData'
+import Link from 'next/link'
 
 export const SecondSection = () => {
   return (
     <section className="h-screen w-full max-w-[1350px] flex items-center justify-center relative lg:px-10">
-      <div className="hidden relative lg:block md:w-[500px] h-[80%] -left-10">
+      <div className="hidden relative lg:block lg:w-[480px] h-[80%] -left-10">
         <div className="lg:h-[600] lg:w-[400px] xl:h-[640px] xl:w-[500px] absolute mx-auto">
           <Image
             alt="image"
@@ -17,12 +19,10 @@ export const SecondSection = () => {
         </div>
       </div>
 
-      <div className=" md:w-[80%] lg:w-1/2 px-4">
+      <div className="w-full md:w-[80%] lg:w-1/2 px-4">
         <Titles sub={'About Us'} main={'Welcome To Our Fitness Gym'} />
-        <p className="my-6 text-xl md:py-6 md:text-2xl">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        <p className="my-6  px-4 text-sm lg:py-6 lg:text-xl">
+          {classes[1].description}
         </p>
         <div className="flex flex-col justify-around md:flex-row">
           <div className="flex align-middle items-center gap-2">
@@ -36,7 +36,7 @@ export const SecondSection = () => {
             </div>
             <p>
               {' '}
-              <b>David Villa.</b> <br />
+              <b>{classes[1].coach}</b> <br />
               Our couch
             </p>
           </div>
@@ -44,8 +44,9 @@ export const SecondSection = () => {
             className="mt-10 md:mt-0"
             variant={'style2'}
             size={'mainsize'}
+            asChild
           >
-            Explore More
+            <Link href={'#classes'}>Explore More</Link>
           </Button>
         </div>
       </div>

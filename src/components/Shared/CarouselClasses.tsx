@@ -1,10 +1,7 @@
-import * as React from 'react'
-
 import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
 } from '@/components/ui/card'
 import {
@@ -18,10 +15,14 @@ import Image from 'next/image'
 import { Progress } from '../ui/progress'
 
 type carouselProps = {
-  name: string
+  _id: number
+  classTitle: string
   description: string
+  coach: string
+  schedule: any
+  difficultyLevel: string
+  capacity: number
   image: string
-  full: number
 }
 
 export function CarouselClasses({ props }: { props: carouselProps[] }) {
@@ -45,26 +46,27 @@ export function CarouselClasses({ props }: { props: carouselProps[] }) {
   )
 }
 
-const ClassesCard = ({ data }: { data: any }) => {
+const ClassesCard = ({ data }: { data: carouselProps }) => {
   return (
     <Card className="h-[480px] w-[300px] lg:mx-10 shadow-md transition hover:scale-105">
       <CardContent className="flex flex-col justify-between px-0  h-full">
         <div className="h-[280px] w-[298px] py-2 relative rounded-t-md overflow-hidden">
-          <Image alt="dude" src={data.image} fill></Image>
+          <Image alt={data.classTitle} src={data.image} fill></Image>
         </div>
         <CardHeader className="w-[90%] mx-auto text-2xl font-semibold py-3">
-          {data.name}
+          {data.classTitle}
         </CardHeader>
-        <CardDescription className="px-4 mx-auto">
-          {data.description} <br />
+        <CardDescription className="px-4 mx-auto max-h-36 text-clip">
+          {data.description.substring(0, 150)}...{' '}
+          <b className="underline">Leer mas</b> <br />
           <label className="flex justify-between font-semibold">
             <b>Class Full</b>
-            <b>{data.full}%</b>
+            <b>{data.capacity}%</b>
           </label>
         </CardDescription>
         <Progress
           className="bg-[#FD3D0C] w-[90%] mx-auto bottom-0"
-          value={data.full}
+          value={data.capacity}
         />
       </CardContent>
     </Card>

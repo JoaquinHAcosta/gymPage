@@ -171,6 +171,7 @@ export const classes = [
       { day: 'Viernes', time: '07:00 - 08:00' },
     ],
     difficultyLevel: 'Intermedio',
+    capacity: 55,
   },
   {
     _id: 2,
@@ -184,7 +185,9 @@ export const classes = [
       { day: 'Sábado', time: '10:00 - 11:00' },
     ],
     difficultyLevel: 'Avanzado',
+    capacity: 55,
   },
+
   {
     _id: 3,
     classTitle: 'Pilates y Yoga',
@@ -197,6 +200,7 @@ export const classes = [
       { day: 'Viernes', time: '19:00 - 20:00' },
     ],
     difficultyLevel: 'Todos los niveles',
+    capacity: 55,
   },
   {
     _id: 4,
@@ -210,6 +214,7 @@ export const classes = [
       { day: 'Sábado', time: '08:00 - 09:00' },
     ],
     difficultyLevel: 'Intermedio',
+    capacity: 55,
   },
   {
     _id: 5,
@@ -223,6 +228,7 @@ export const classes = [
       { day: 'Viernes', time: '18:00 - 19:00' },
     ],
     difficultyLevel: 'Avanzado',
+    capacity: 55,
   },
   {
     _id: 6,
@@ -236,5 +242,6 @@ export const classes = [
       { day: 'Sábado', time: '09:00 - 10:00' },
     ],
     difficultyLevel: 'Intermedio',
+    capacity: 55,
   },
 ]
