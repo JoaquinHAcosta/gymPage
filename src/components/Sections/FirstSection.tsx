@@ -1,4 +1,3 @@
-import React from 'react'
 import { Button } from '../ui/button'
 import Image from 'next/image'
 import GimGuyImage from '../../../public/gymguy3.png'
@@ -7,7 +6,10 @@ const isProd = process.env.NODE_ENV === 'production'
 
 const FirstSection = () => {
   return (
-    <section className="bg-[rgb(3,12,20)] bg-[linear-gradient(62deg,_rgba(3,12,20,1)_72%,_rgba(253,61,12,1)_72%)] h-screen w-full ">
+    <section
+      id="home"
+      className="bg-[rgb(3,12,20)] bg-[linear-gradient(62deg,_rgba(3,12,20,1)_72%,_rgba(253,61,12,1)_72%)] h-screen w-full "
+    >
       <div className="relative h-screen flex items-center justify-center bottom-0 max-w-[1350px] mx-auto">
         <div className=" text-white absolute z-10 w-[80%] xl:w-[800px]">
           <label className=" flex bold uppercase">
@@ -27,19 +29,11 @@ const FirstSection = () => {
           </Button>
         </div>
         <div className="w-[350px] h-[450px] md:w-[520px] md:h-[650px] absolute bottom-0 right-0">
-          <Image
-            layout="fill"
-            alt="image"
-            // objectFit="contain"
-            src={GimGuyImage}
-            // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            // sizes=''
-          ></Image>
+          <Image layout="fill" alt="image" src={GimGuyImage}></Image>
         </div>
       </div>
     </section>
   )
 }
 
-// background: linear-gradient(48deg, rgba(253,61,12,1) 81%, rgba(3,12,20,1) 82%);
 export default FirstSection
