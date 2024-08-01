@@ -1,5 +1,29 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { ClassesInfo } from './ClassesInfo'
+import { typadoClasses } from '@/types/types'
+
+function filterClasses(arrayClasse: typadoClasses[], day: string) {
+  let arrayOfClasses = []
+
+  for (let i = 0; i < arrayClasse.length; i++) {
+    let scheduleSingleClase = arrayClasse[i].schedule
+
+    for (let j = 0; j < scheduleSingleClase.length; j++) {
+      if (Object.values(scheduleSingleClase[j]).includes(day)) {
+        let claseDia = {
+          idClase: arrayClasse[i]._id,
+          title: arrayClasse[i].classTitle,
+          description: arrayClasse[i].description,
+          horario: scheduleSingleClase[j].time,
+        }
+        arrayOfClasses.push(claseDia)
+      }
+    }
+    scheduleSingleClase = []
+  }
+
+  return arrayOfClasses
+}
 
 export const PickClasses = () => {
   return (
@@ -14,20 +38,31 @@ export const PickClasses = () => {
         <TabsTrigger value="domingo">Domingo</TabsTrigger>
       </TabsList>
       <TabsContent value="lunes">
-        <ClassesInfo />
+        <ClassesInfo clasesDia={filterClasses(classes, 'Lunes')} />
       </TabsContent>
-      <TabsContent value="martes">Clases del martes</TabsContent>
+      <TabsContent value="martes">
+        <ClassesInfo clasesDia={filterClasses(classes, 'Martes')} />
+      </TabsContent>
       <TabsContent value="miercoles">
-        Clases del miercoles
-        <ClassesInfo />
+        <ClassesInfo clasesDia={filterClasses(classes, 'Miércoles')} />
       </TabsContent>
-      <TabsContent value="jueves">Clases del jueves</TabsContent>
-      <TabsContent value="viernes">Clases del viernes</TabsContent>
-      <TabsContent value="sabado">Clases del sabado</TabsContent>
-      <TabsContent value="domingo">Clases del domingo</TabsContent>
+      <TabsContent value="jueves">
+        <ClassesInfo clasesDia={filterClasses(classes, 'Jueves')} />
+      </TabsContent>
+      <TabsContent value="viernes">
+        <ClassesInfo clasesDia={filterClasses(classes, 'Viernes')} />
+      </TabsContent>
+      <TabsContent value="sabado">
+        <ClassesInfo clasesDia={filterClasses(classes, 'Sábado')} />
+      </TabsContent>
+      <TabsContent value="domingo">
+        <ClassesInfo clasesDia={filterClasses(classes, 'Domingo')} />
+      </TabsContent>
     </Tabs>
   )
 }
+
+import { classes } from '@/data/gymData'
 
 const HorarioClases = [
   {
