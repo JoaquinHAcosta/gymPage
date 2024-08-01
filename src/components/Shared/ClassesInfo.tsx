@@ -5,27 +5,24 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion'
 
-export const ClassesInfo = () => {
+type Props = {
+  idClase: number
+  title: string
+  description: string
+  horario: string
+}
+
+export const ClassesInfo = ({ clasesDia }: { clasesDia: Props[] }) => {
   return (
     <Accordion type="single" collapsible>
-      <AccordionItem value="item-1">
-        <AccordionTrigger className="h-20">Clases de Yoga</AccordionTrigger>
-        <AccordionContent>
-          Yes. It adheres to the WAI-ARIA design pattern.
-        </AccordionContent>
-      </AccordionItem>
-      <AccordionItem value="item-2">
-        <AccordionTrigger>Clases de Musculatura</AccordionTrigger>
-        <AccordionContent>
-          Yes. It adheres to the WAI-ARIA design pattern.
-        </AccordionContent>
-      </AccordionItem>
-      <AccordionItem value="item-3">
-        <AccordionTrigger>Clases de Cardio</AccordionTrigger>
-        <AccordionContent>
-          Yes. It adheres to the WAI-ARIA design pattern.
-        </AccordionContent>
-      </AccordionItem>
+      {clasesDia.map((clase) => {
+        return (
+          <AccordionItem value={`item-${clase.idClase}`} key={clase.idClase}>
+            <AccordionTrigger className="h-20">{clase.title}</AccordionTrigger>
+            <AccordionContent>{clase.description}</AccordionContent>
+          </AccordionItem>
+        )
+      })}
     </Accordion>
   )
 }

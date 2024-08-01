@@ -5,7 +5,10 @@ import Image from 'next/image'
 
 export const FourthSection = () => {
   return (
-    <section className="relative w-full h-screen flex justify-center bg-stone-500">
+    <section
+      id="schedule"
+      className="relative w-full h-screen flex justify-center bg-stone-500"
+    >
       <Image
         alt="bg-gympeople"
         style={{
